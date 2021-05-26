@@ -7,24 +7,27 @@
   <title>Forms</title>
 </head>
 <body>
+  <form action="">
   <div>
-    <form action="">
-      <input type="text" placeholder="Full Name"><br>
-      <input type="text" placeholder="Email">
-    </form>
-  </div>
+    <label for="fullname">Full Name:</label>
+    <input id="fullname" type="text" placeholder="Full Name"><br><br>
+    <label for="email">Email:</label>
+    <input id="email" type="text" placeholder="Email">
+  </div><br>
   <div>
-  <select>
+    <label for="gender">Gender:</label>
+    <select id="gender">
     <option disabled selected>Select</option>
     <option value="male">male</option>
     <option value="female">female</option>
   </select>
-  </div>
+  </div><br>
   <div>
     <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
   </div>
   <div>
     <button type="button">Sign up</button> 
   </div>
+</form>
 </body>
 </html>
