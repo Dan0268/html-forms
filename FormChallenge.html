@@ -7,26 +7,27 @@
   <title>Forms</title>
 </head>
 <body>
-  <form action="">
+  <form action="https://formspree.io/f/xayaoqdn" method="post">
   <div>
     <label for="fullname">Full Name:</label>
-    <input id="fullname" type="text" placeholder="Full Name"><br><br>
+    <input name="form_fullname" id="fullname" type="text" placeholder="Full Name" required><br><br>
     <label for="email">Email:</label>
-    <input id="email" type="text" placeholder="Email">
+    <input name="form_email" id="email" type="email" placeholder="Email" required>
   </div><br>
   <div>
     <label for="gender">Gender:</label>
-    <select id="gender">
-    <option disabled selected>Select</option>
+    <select name="form_gender" id="gender" required>
+    <option selected disabled>Select</option>
     <option value="male">male</option>
     <option value="female">female</option>
   </select>
   </div><br>
   <div>
-    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+    <label for="message">Message</label>
+    <textarea name="form_message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
   </div>
   <div>
-    <button type="button">Sign up</button> 
+    <button>Sign up</button> 
   </div>
 </form>
 </body>
